@@ -1,4 +1,5 @@
-define("bui-slider/1.1.0/index-debug", ["bui-slider/1.1.0/src/slider-debug", "jquery", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
+define("bui-slider/1.1.0/index-debug", ["bui-common/1.1.0/common-debug", "jquery"], function(require, exports, module) {
+  var BUI = require("bui-common/1.1.0/common-debug");
   var Slider = BUI.namespace('Slider');
   BUI.mix(Slider, {
     Slider: require("bui-slider/1.1.0/src/slider-debug")
@@ -11,7 +12,7 @@ define("bui-slider/1.1.0/src/slider-debug", ["jquery", "bui-common/1.1.0/common-
    * @ignore
    */
   'use strict';
-  var $ = require("jquery"),
+  var $ = require('jquery'),
     doc = document,
     BUI = require("bui-common/1.1.0/common-debug"),
     CLS_HANDLE = 'x-slider-handle',

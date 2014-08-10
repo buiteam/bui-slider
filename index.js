@@ -1,4 +1,5 @@
 
+var BUI = require('bui-common');
 var Slider = BUI.namespace('Slider');
 
 BUI.mix(Slider, {
